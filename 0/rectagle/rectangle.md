@@ -1,37 +1,49 @@
-# Test problem
+# Perimeter 
 
-https://facelessuser.github.io/pymdown-extensions/extensions/superfences/
-```python
-def hello(name="world"):
-    print(f"Hello, {name}")
-name = input("Name: ")
-hello(name)
-```
-```c
-#include <stdio.h>
-int main() {
-    // printf() displays the string inside quotation marks Lorem ipsum
-    printf("Hello, World!");
-    return 0;
-}
-```
+You will implement two functions main and calc_perimeter. 
+    In the calc_perimeter function you will take in two inputs as the function parameters which would be the two sides of 
+a rectangle. Then you will calculate the perimeter, and return the number. 
+    In the main function you will prompt the user for two numbers (side a, and side b), then call the calc_perimeter function, passing in the side a and side b. Then you will print the perimeter. 
 
-## LaTeX
-
-https://facelessuser.github.io/pymdown-extensions/extensions/arithmatex/
-
-$`\begin{align} E(\mathbf{v}, \mathbf{h}) = -\sum_{i,j}w_{ij}v_i h_j - \sum_i b_i
-v_i - \sum_j c_j h_j \end{align}`$
-
-$`\begin{align} p(v_i=1|\mathbf{h}) & = \sigma\left(\sum_j w_{ij}h_j + b_i\right)
-\\ p(h_j=1|\mathbf{v}) & = \sigma\left(\sum_i w_{ij}v_i + c_j\right) \end{align}`$
-
-## Blocks
-<details open>
-    <summary>Did you know?</summary>
-    You can create a note with Blocks!
-</details>
 <details>
-    <summary>Hidden note</summary>
-    Secret inside!
+    <summary>Hints</summary>
+    Dont forget that input returns a string, so you will have to convert it to an int https://www.w3schools.com/python/ref_func_int.asp
+    To define a function which can take in parameters you can check out this link https://www.w3schools.com/python/python_functions.asp
 </details>
+
+# To start
+Create a new folder called perimeter (feel free to copy thin into your terminal)
+```
+mdkir perimeter
+cd perimeter
+```
+create a new file called perimeter.py
+```
+code perimeter.py
+```
+now you can code in the new file created
+
+# How to test your program
+### 1)
+Enter this as the folowing input:
+```
+Side a: 5
+Side b: 2
+```
+You are supposed to get 14 as the output
+
+### 2)
+Enter this as the folowing input:
+```
+Side a: 10
+Side b: 5
+```
+You are supposed to get 30 as the output
+
+### 3)
+Enter this as the folowing input:
+```
+Side a: 2
+Side b: 4
+```
+You are supposed to get 12 as the output
