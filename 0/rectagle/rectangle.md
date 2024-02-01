@@ -1,4 +1,4 @@
-# Test problem
+# Rectangle!
 
 https://facelessuser.github.io/pymdown-extensions/extensions/superfences/
 ```python
