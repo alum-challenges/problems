@@ -1,9 +1,9 @@
 ---
 title: Perimeter of a Rectangle
 author: Dana-f559
-course: CS50P: Introduction to Programming with Python
+course: "CS50P: Introduction to Programming with Python"
 week: 0
-concepts: Functions, Variables
+concepts: "Functions, Variables"
 ---
 # Rectangle! test update 5
 
