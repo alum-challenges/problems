@@ -13,8 +13,8 @@ def test5and3():
     """input of 5 and 3 yeilds output of 26"""
     output = (
         check50.run("python3 rectangle.py")
-        .stdin("5", prompt=False)
-        .stdin("3", prompt=False)
+        .stdin("5", prompt=True)
+        .stdin("3", prompt=True)
         .stdout()
     )
 
