@@ -85,7 +85,7 @@ def test1and1():
 
 @check50.check(exists)
 def test23and45():
-    """input of 23 and 45 yeilds output of 96"""
+    """input of 23 and 45 yeilds output of 136"""
     output = (
         check50.run("python3 rectangle.py")
         .stdin("23", prompt=True)
@@ -100,9 +100,9 @@ def test23and45():
     number = match[-1]
 
     # Match correct number
-    if not re.match(r"^96$", number):
+    if not re.match(r"^136$", number):
         raise check50.Mismatch(
-            "96",
+            "136",
             number,
             help="Seems like your output might not be the right number!",
         )
