@@ -1,13 +1,51 @@
-# Perimeter Of A Rectange
+---
+title: Perimeter of a Rectangle
+author: Dana-f559
+course: CS50 Python
+week: 0
+topics: "[\"Functions\", \"Variables\"]"
+---
+# Perimeter of a Rectange
 ## Backgroud
-In grade 3, u learn how to calculate the perimeter of a rectange. After this by taking small steps you learn more advanced maths. It is the same with programming, first small steps then you go up higher. This is why this practice probelem is starting with the small step, and making you implement a programm that would calculate a rectangles perimeter. 
+One of the first geometry problems you learn is how to calculate the perimeter of a rectangle. After this, by taking small steps, you learn more advanced maths. It is the same with programming: first you takesmall steps, then you build up higher. Let's go back and implement a programm that calculates a rectangle's perimeter.
+
+In a file called `rectangle.py`, implement a program in Python that prompts the user for the length of a rectangle, then prompts for the height of the rectangle. Your program should then sends those inputs to a function called `calc_perimeter` that returns the length of the perimeter of that rectangle. Finally, print the returned value and tell the user how long the perimeter of their rectangle is.
+
 
 ## Understanding
-Your programm will need to take in two inputs, which would be the two sides of the perimeter (side a, side b). Then with the help of calc_perimeter function you are going to calculate the perimeter, and print it.
+A rectangle is any shape with four straight sides that has right angles (90 degrees angles) in each corner. A rectangle is any shape like the following:
+```mermaid
+flowchart TD
+    A[Rectangle]
+    B{Rectangle}
+```
+If laid on its side, a rectangle has two vertical sides who are lengths equal to each other, and two horizontal sides whose lengths may be different from the vertical, but are equal *to each other*. A rectangle is said to have a `height` (the length of a vertical side) and a `width` (the length of a horizontal side). As you may have guessed, a square is a subtype of rectangle where the height and width are the same.
 
+Your programm will need to take in two inputs, which would be the two sides of the perimeter (`side a` and `side b`). Then with the help of `calc_perimeter` function you are going to calculate the perimeter, and print it.
+
+## Before You Begin
+Execute cd by itself in your terminal window. You should find that your terminal window’s prompt resembles the below:
+```bash
+$
+```
+Next execute
+```bash
+mkdir rectangle
+```
+to make a folder called `rectangle` in your codespace.
+
+Then execute
+```bash
+cd rectangle
+```
+to change directories into that folder. You should now see your terminal prompt as `rectangle/ $`. You can now execute
+```bash
+code rectangle.py
+```
+to make a file called `rectangle.py` where you’ll write your program.
 
 ## Specification
-You will implement two functions main and calc_perimeter. 
+You will implement two functions: `main` and `calc_perimeter`. 
     In the main function you will prompt the user for two numbers (side a, and side b), then call the calc_perimeter function, passing in the side a and side b. Then you will print the perimeter. 
     
 In the calc_perimeter function you will take in two inputs as the function parameters which would be the two sides of 
@@ -21,19 +59,19 @@ Dont forget that input returns a string, so you will have to convert it to an in
 To define a function which can take in parameters you can check out this link https://www.w3schools.com/python/python_functions.asp
 </details>
 
-# To start
-Create a new folder called perimeter (feel free to copy thin into your terminal)
+## Before You Begin
+Create a new folder called `perimeter` (feel free to copy thin into your terminal):
 ```
 mdkir perimeter
 cd perimeter
 ```
-create a new file called perimeter.py
+Create a new file called `perimeter.py`:
 ```
 code perimeter.py
 ```
-now you can code in the new file created
+Now you can code in the new file created.
 
-# Testing your programm 
+# How to Test
 ### 1)
 Enter this as the folowing input:
 ```
