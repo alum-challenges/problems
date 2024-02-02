@@ -1,6 +1,12 @@
-# Perimeter 
+# Perimeter Of A Rectange
+## Backgroud
+In grade 3, u learn how to calculate the perimeter of a rectange. After this by taking small steps you learn more advanced maths. It is the same with programming, first small steps then you go up higher. This is why this practice probelem is starting with the small step, and making you implement a programm that would calculate a rectangles perimeter. 
+
+## Understanding
 Your programm will need to take in two inputs, which would be the two sides of the perimeter (side a, side b). Then with the help of calc_perimeter function you are going to calculate the perimeter, and print it.
-## Details
+
+
+## Specification
 You will implement two functions main and calc_perimeter. 
     In the main function you will prompt the user for two numbers (side a, and side b), then call the calc_perimeter function, passing in the side a and side b. Then you will print the perimeter. 
     
@@ -27,7 +33,7 @@ code perimeter.py
 ```
 now you can code in the new file created
 
-# How to test your program
+# Testing your programm 
 ### 1)
 Enter this as the folowing input:
 ```
@@ -59,4 +65,10 @@ Side b: 4
 You are supposed to get 12 as the output
 ```
 Perimeter: 12
+```
+
+## How to submit
+
+```
+idk what to write here lol
 ```
