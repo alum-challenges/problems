@@ -20,7 +20,7 @@ def test5and3():
 
     # Extract number from stdout
     match = re.findall(r"([.,]?(?:\d[.,]?)+)", output)
-    if match is None:
+    if not match:
         raise check50.Failure("Looks like your program didn't output a number!")
     number = match[-1]
 
