@@ -10,7 +10,7 @@ def exists():
 
 @check50.check(exists)
 def test5and3():
-    """input of 5 and 3 yeilds output of 26"""
+    """input of 5 and 3 yeilds output of 16"""
     output = (
         check50.run("python3 rectangle.py")
         .stdin("5", prompt=True)
@@ -25,9 +25,9 @@ def test5and3():
     number = match[-1]
 
     # Match correct number
-    if not re.match(r"^26$", number):
+    if not re.match(r"^16$", number):
         raise check50.Mismatch(
-            "26",
+            "16",
             number,
             help="Seems like your output might not be the right number!",
         )
@@ -35,11 +35,11 @@ def test5and3():
 
 @check50.check(exists)
 def test3and5():
-    """input of 3 and 5 yeilds output of 26"""
+    """input of 3 and 5 yeilds output of 16"""
     output = (
         check50.run("python3 rectangle.py")
-        .stdin("3", prompt=False)
-        .stdin("5", prompt=False)
+        .stdin("3", prompt=True)
+        .stdin("5", prompt=True)
         .stdout()
     )
 
@@ -50,9 +50,9 @@ def test3and5():
     number = match[-1]
 
     # Match correct number
-    if not re.match(r"^26$", number):
+    if not re.match(r"^16$", number):
         raise check50.Mismatch(
-            "26",
+            "16",
             number,
             help="Seems like your output might not be the right number!",
         )
@@ -63,8 +63,8 @@ def test1and1():
     """input of 1 and 1 yeilds output of 4"""
     output = (
         check50.run("python3 rectangle.py")
-        .stdin("1", prompt=False)
-        .stdin("1", prompt=False)
+        .stdin("1", prompt=True)
+        .stdin("1", prompt=True)
         .stdout()
     )
 
@@ -88,8 +88,8 @@ def test23and45():
     """input of 23 and 45 yeilds output of 96"""
     output = (
         check50.run("python3 rectangle.py")
-        .stdin("3", prompt=False)
-        .stdin("5", prompt=False)
+        .stdin("23", prompt=True)
+        .stdin("45", prompt=True)
         .stdout()
     )
 
