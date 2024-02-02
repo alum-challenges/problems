@@ -45,7 +45,7 @@ def test3and5():
 
     # Extract number from stdout
     match = re.findall(r"([.,]?(?:\d[.,]?)+)", output)
-    if match is None:
+    if not match:
         raise check50.Failure("Looks like your program didn't output a number!")
     number = match[-1]
 
@@ -70,7 +70,7 @@ def test1and1():
 
     # Extract number from stdout
     match = re.findall(r"([.,]?(?:\d[.,]?)+)", output)
-    if match is None:
+    if not match:
         raise check50.Failure("Looks like your program didn't output a number!")
     number = match[-1]
 
@@ -95,7 +95,7 @@ def test23and45():
 
     # Extract number from stdout
     match = re.findall(r"([.,]?(?:\d[.,]?)+)", output)
-    if match is None:
+    if not match:
         raise check50.Failure("Looks like your program didn't output a number!")
     number = match[-1]
 
