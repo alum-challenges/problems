@@ -1,6 +1,7 @@
 ---
 title: Perimeter of a Rectangle
 author: Dana-f559
+<<<<<<< HEAD:0/rectagle/rectangle.md
 course: CS50 Python
 week: 0
 topics: "[\"Functions\", \"Variables\"]"
@@ -8,6 +9,13 @@ topics: "[\"Functions\", \"Variables\"]"
 # Perimeter of a Rectange
 ## Backgroud
 One of the first geometry problems you learn is how to calculate the perimeter of a rectangle. After this, by taking small steps, you learn more advanced maths. It is the same with programming: first you takesmall steps, then you build up higher. Let's go back and implement a programm that calculates a rectangle's perimeter.
+=======
+course: CS50P
+week: 0
+topics: "[\"Functions\", \"Variables\"]"
+---
+# Rectangle! test update 5
+>>>>>>> dana/main:python/0/rectagle/rectangle.md
 
 In a file called `rectangle.py`, implement a program in Python that prompts the user for the length of a rectangle, then prompts for the height of the rectangle. Your program should then sends those inputs to a function called `calc_perimeter` that returns the length of the perimeter of that rectangle. Finally, print the returned value and tell the user how long the perimeter of their rectangle is.
 
