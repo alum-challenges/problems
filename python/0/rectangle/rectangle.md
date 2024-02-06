@@ -1,7 +1,6 @@
 ---
 title: Perimeter of a Rectangle
 author: Dana-f559
-<<<<<<< HEAD:0/rectagle/rectangle.md
 course: CS50 Python
 week: 0
 topics: "[\"Functions\", \"Variables\"]"
@@ -9,13 +8,6 @@ topics: "[\"Functions\", \"Variables\"]"
 # Perimeter of a Rectange
 ## Backgroud
 One of the first geometry problems you learn is how to calculate the perimeter of a rectangle. After this, by taking small steps, you learn more advanced maths. It is the same with programming: first you takesmall steps, then you build up higher. Let's go back and implement a programm that calculates a rectangle's perimeter.
-=======
-course: CS50P
-week: 0
-topics: "[\"Functions\", \"Variables\"]"
----
-# Rectangle! test update 5
->>>>>>> dana/main:python/0/rectagle/rectangle.md
 
 In a file called `rectangle.py`, implement a program in Python that prompts the user for the length of a rectangle, then prompts for the height of the rectangle. Your program should then sends those inputs to a function called `calc_perimeter` that returns the length of the perimeter of that rectangle. Finally, print the returned value and tell the user how long the perimeter of their rectangle is.
 
@@ -54,7 +46,8 @@ to make a file called `rectangle.py` where you’ll write your program.
 
 ## Specification
 You will implement two functions: `main` and `calc_perimeter`. 
-    In the main function you will prompt the user for two numbers (side a, and side b), then call the calc_perimeter function, passing in the side a and side b. Then you will print the perimeter. 
+
+In the `main` function you will prompt the user for two numbers (the `height` and the `width`), then call the `calc_perimeter` function, passing in the values for the height and the width as argument.
     
 In the calc_perimeter function you will take in two inputs as the function parameters which would be the two sides of 
 a rectangle. Then you will calculate the perimeter, and return the number. 
@@ -62,59 +55,28 @@ a rectangle. Then you will calculate the perimeter, and return the number.
 
 <details>
     <summary>Hints</summary>
-Dont forget that input returns a string, so you will have to convert it to an int https://www.w3schools.com/python/ref_func_int.asp
-    
-To define a function which can take in parameters you can check out this link https://www.w3schools.com/python/python_functions.asp
+        <p>Don't forget that input returns a string, and you need an int: <a href="https://docs.python.org/3/library/functions.html#int">https://docs.python.org/3/library/functions.html#int</a>
+        <p>More about functions: <a href="https://docs.python.org/3/tutorial/controlflow.html#defining-functions">https://docs.python.org/3/tutorial/controlflow.html#defining-functions</a></p>
 </details>
 
-## Before You Begin
-Create a new folder called `perimeter` (feel free to copy thin into your terminal):
-```
-mdkir perimeter
-cd perimeter
-```
-Create a new file called `perimeter.py`:
-```
-code perimeter.py
-```
-Now you can code in the new file created.
-
 # How to Test
-### 1)
-Enter this as the folowing input:
-```
-Side a: 5
-Side b: 2
-```
-You are supposed to get 14 as the output
-```
-Perimeter: 14
-```
+* Run your program with `python rectangle.py`. Type `5` and press Enter. At the next prompt, type `3` and press Enter. Your program should output `14`.
 
-### 2)
-Enter this as the folowing input:
-```
-Side a: 10
-Side b: 5
-```
-You are supposed to get 30 as the output
-```
-Perimeter: 30
-```
+* Run your program with `python rectangle.py`. Type `10` and press Enter. At the next prompt, type `5` and press Enter. Your program should output `30`.
 
-### 3)
-Enter this as the folowing input:
-```
-Side a: 2
-Side b: 4
-```
-You are supposed to get 12 as the output
-```
-Perimeter: 12
-```
+* Run your program with `python rectangle.py`. Type `2` and press Enter. At the next prompt, type `4` and press Enter. Your program should output `12`.
 
-## How to submit
+If you run into an error saying your file cannot be opened, retrace your steps to be sure that you are inside your `rectangle` folder and have saved your `rectangle.py` file there.
 
+You can execute the below to check your code using `check50`, a program that CS50 will use to test your code.
+```bash
+check50 alum-challenges/problems/main/python/0/rectangle/tests
 ```
-idk what to write here lol
-```
+* **<span style="color: yellowgreen;">Green</span>** smiles mean your program has passed a test!
+* **<span style="color: firebrick;">Red</span>** frowns will indicate your program output something unexpected.
+* **<span style="color: orange;">Orange</span>** neutral faces mean you must fix the failed check before those checks can run.
+
+Visit the URL that `check50` outputs to see the input `check50` handed to your program, what output it expected, and what output your program actually gave.
+
+## How to Submit
+> *Coming soon*
