@@ -38,7 +38,9 @@ Then execute
 ```bash
 cd rectangle
 ```
-to change directories into that folder. You should now see your terminal prompt as `rectangle/ $`. You can now execute
+to change directories into that folder.
+
+You should now see your terminal prompt as `rectangle/ $`. You can now execute
 ```bash
 code rectangle.py
 ```
@@ -49,7 +51,7 @@ You will implement two functions: `main` and `calc_perimeter`.
 
 In the `main` function you will prompt the user for two numbers (the `height` and the `width`), then call the `calc_perimeter` function, passing in the values for the height and the width as argument.
     
-In the calc_perimeter function you will take in two inputs as the function parameters which would be the two sides of 
+In the `calc_perimeter` function you will take in two inputs as the function parameters which would be the two sides of 
 a rectangle. Then you will calculate the perimeter, and return the number. 
     
 
