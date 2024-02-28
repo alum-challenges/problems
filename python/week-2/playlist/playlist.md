@@ -8,16 +8,21 @@ topics: "[\"Functions\", \"Lists\", \"Dict\", \"Loops\"]"
 
 # Playlist
 ## Backgroud
-From ancient civilizations to modern times, music has been a big part of human history. Though it has evolved through many centuries it still brings joy to a lot of listeners. Before, not all of the listeners could find the name of the song or the artist who created it. Neither could they make their own playlist, to listen to a list of songs they choose. But now with the new innovation of technology you can do that in a meter of clicks. That's why this problem set is going to be about writing code for a program that will ask for all the songs you want to add for your playlist, and then give the list back to you.
+From vinyl records, to casette tapes, to CDs, and back to vinyl records, people have been fascinated with creating customized collections of songs and giving them as "mixtapes" to each other. Most people do things digitally now, but the playlist is still a staple in modern music.
 
-In a file called `playlist.py`, implement a program in Python that prompts the user for the number of songs they want to add to their playlist. Your program should then send that input to a function called `add_songs` that returns a list of dictionaries. Finally print that list as `song by artist`. 
+In a file called `playlist.py`, implement a program in Python that prompts the user for the number of songs they want to add to their playlist. Your program should then send that input to a function called `create_playlist` that asks the user for information about the songs in the playlist, and when done taking input, returns the playlist as a list of dictionaries. Finally, your program should print the playlist.
 
 ## Understanding
-Song - a short musical composition of words and music.
 
-Artist (music artist) -  creates, performs, and often produces music as a form of artistic expression.
+A playlist involves 3 key terms:
 
-Playlist -  a custom compilation of songs and music videos.
+*`Song`* - a particular work of music by a musical artist.
+
+*`Artist`* (also known as a musical artist) - the person or group who creates, performs, and often produces songs as a form of artistic expression.
+
+*`Playlist`* - an ordered collection of songs.
+
+Each playlist has one or more songs. Each song has a title and an artist. You can represent this information as a list of dictionaries, with each dictionary containing a key for the song title and a key for the artist name. 
 
 ## Before You Begin
 Execute cd by itself in your terminal window. You should find that your terminal window’s prompt resembles the below:
@@ -43,11 +48,34 @@ code playlist.py
 to make a file called `playlist.py` where you’ll write your program.
 
 ## Specification
-You will implement two functions: `main` and `add_songs`
+You will implement two functions: `main` and `create_playlist`
 
-In the `main` function you will prompt the user for the number of songs they want to add to the playlist. If the input provided is not a positive number then reprompt the user (0 not included). Then call the `add_songs` function, passing in the value of the songs, and storing the return value of that function in a variable. The it will print the "playlist" in such format `song by artist`
+The `create_playlist` function should take one input as a parameter which is the number of songs they want to add. Then in two seperate prompts it should ask the user for a song name, then ask for the song's artist. If one of the inputs was not provided then reprompt the user starting from the song name. Once the user has successfully entered both values, add it to the playlist. The playlist should be of type `list` with items of type `dict`. The keys for each dictionary sould be `song` and `artist`. Repeat this process until the playlist is full (based on the number of songs given as the input parameter). When the list if full, return that list.
 
-In the `add_songs` function you will take in one input as the function parameters which would be the number of songs they want to add. Then using a loop (in range of the songs number) you will ask them for the song name then the songs artist. If one of the inputs was not provided then reprompt the user for the inputs. After that you will save it as a dictionary where the keys would be `song` and `artist`, and append that dictionary to a list. Then return that list.
+The `main` function should prompt the user for the number of songs they want to add to the playlist. If the input provided is not a positive number then it should reprompt the user. Then it will call the `create_playlist` function, passing in the number of songs, and assign the result into a variable. Then print the playlist with the following format:
+
+```
+1. Half Way There by Bon Jovi
+2. Never Gonna Give You Up by Rick Astley
+...
+etc.
+```
+
+Use this starting code. Edit only the body of `main` and `create_playlist`:
+```python
+def main():
+    # TODO
+    raise NotImplementedError
+
+
+def create_playlist(num_songs):
+    # TODO
+    raise NotImplementedError
+
+
+if __name__ == "__main__":
+    main()
+```
 
 <details>
     <summary>Hints</summary>
