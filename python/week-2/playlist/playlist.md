@@ -85,13 +85,20 @@ if __name__ == "__main__":
 </details>
 
 # How to Test
-* Run your program with `python playlist.py`. Type `cat` and press Enter. Your program should ask again for the number of songs. 
-
-* Run your program with `python playlist.py`. Type `1` and press Enter. At the next prompt, type `Twenties` and press Enter. Then type `Ghost`. Your program should output `Twenties by Ghost`
-
-* Run your program with `python playlist.py`. Type `3` and press Enter. At the next prompt, type `Twenties` and press Enter. Then type `Ghost` folowed by Enter. Then, type `Valentine` and press Enter. Then type `Maneskin` folowed by Enter. Then, type `Yes, and?` and press Enter. Then type `Ariana Grande` folowed by Enter. Your program should output `Twenties by Ghost` `Valentine by Maneskin` `Yes, and? by Ariana Grande`
+* Run your program with `python playlist.py`. Type `cat` and press Enter. Your program should ask again for the number of songs. Then type `1` and press Enter. At the next prompt, simply press Enter without typing. Your program should ask again for the song name. Type `Twenties` and press Enter. At the next prompt, press Enter again without typing anything. Your program should ask again, starting over with the song name. Finally, at the next prompt, type `Twenties` and press Enter. Then type `Ghost` and press Enter. Upon receiving valid input for all of the prompts, your program should output:
+```
+1. Twenties by Ghost
+```
+* Run your program with `python playlist.py`. Type `3` and press Enter. At the next prompt, type `Twenties` and press Enter. Then type `Ghost` folowed by Enter. Then, type `Valentine` and press Enter. Then type `Maneskin` folowed by Enter. Then, type `Yes, and?` and press Enter. Then type `Ariana Grande` folowed by Enter. Your program should output:
+```
+1. Twenties by Ghost
+2. Valentine by Maneskin
+3. Yes, and? by Ariana Grande
+```
 
 If you run into an error saying your file cannot be opened, retrace your steps to be sure that you are inside your `playlist` folder and have saved your `playlist.py` file there.
+
+If you get an error saying `python` is not found, try replacing it with `python3` in the terminal command instead.
 
 You can execute the below to check your code using `check50`, a program that CS50 will use to test your code.
 > *Coming soon*
