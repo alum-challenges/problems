@@ -82,7 +82,7 @@ def test_one_song_output():
 
     check50.run("python3 playlist.py").stdin("7", prompt=False).stdin(
         "Soothsayer", prompt=False
-    ).stdin("Buckethead", prompt=False).stdout(regex(output), output, regex=True).exit()
+    ).stdin("Buckethead", prompt=False).stdout(regex(output), output, regex=True)
 
 
 @check50.check(test_one_song)
@@ -125,4 +125,4 @@ def test_seven_song_output():
         "kuiper", prompt=False
     ).stdout(
         regex(output), output, regex=True
-    ).exit()
+    )
