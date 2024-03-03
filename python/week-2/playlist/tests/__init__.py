@@ -4,7 +4,7 @@ from re import escape
 
 def regex(text):
     """match case-sensitively with any characters on either side"""
-    return rf"^.*{escape(text)}.*$"
+    return rf"^.*{text}.*$"
 
 
 @check50.check()
@@ -78,9 +78,7 @@ def test_seven_songs():
 def test_one_song_output():
     """playlist.py outputs a single-song playlist with correct format"""
 
-    output = """
-1. Soothsayer by Backethead
-"""
+    output = r"""1\. Soothsayer by Backethead"""
 
     check50.run("python3 playlist.py").stdin("7", prompt=False).stdin(
         "Soothsayer", prompt=False
@@ -91,13 +89,13 @@ def test_one_song_output():
 def test_seven_song_output():
     """playlist.py outputs a multi-song playlist with correct format"""
 
-    output = """1. Soothsayer by Backethead
-2. Everybody Wants to Rule the World by Tears for Fears
-3. Everything in Its Right Place by Radiohead
-4. Visa fran Utanmyra by Jan Johansson
-5. Road to Nowhere by Talking Heads
-6. Orbaum by Grip on the News
-7. Fool me twice. by kuiper"""
+    output = r"""1\. Soothsayer by Backethead
+2\. Everybody Wants to Rule the World by Tears for Fears
+3\. Everything in Its Right Place by Radiohead
+4\. Visa fran Utanmyra by Jan Johansson
+5\. Road to Nowhere by Talking Heads
+6\. Orbaum by Grip on the News
+7\. Fool me twice\. by kuiper"""
 
     check50.run("python3 playlist.py").stdin("7", prompt=False).stdin(
         "Soothsayer", prompt=False
