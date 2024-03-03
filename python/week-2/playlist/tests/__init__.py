@@ -41,9 +41,9 @@ def test_decimal_songcount():
 @check50.check(exists)
 def test_valid_songcount():
     """playlist.py accepts valid number of songs"""
-    check50.run("python3 game.py").stdin("10", prompt=True).stdout(
+    check50.run("python3 game.py").stdin("10", prompt=False).stdout(
         regex("Title:"), "Title:", regex=True
-    ).kill()
+    )
 
 
 @check50.check(exists)
