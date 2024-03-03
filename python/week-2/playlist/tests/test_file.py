@@ -2,14 +2,14 @@ from playlist import create_playlist
 import pytest
 
 
-def test_one_song():
+def test_one_song(monkeypatch):
     inputs = iter(["Soothsayer", "Buckethead"])
     monkeypatch.setattr("builtins.input", lambda _: next(inputs))
     output = create_playlist(1)
     assert output == [{"title": "Soothsayer", "artist": "Buckethead"}]
 
 
-def test_seven_songs():
+def test_seven_songs(monkeypatch):
     inputs = iter(
         [
             "Soothsayer",
