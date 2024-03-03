@@ -42,7 +42,7 @@ def test_decimal_songcount():
 def test_valid_songcount():
     """playlist.py accepts valid number of songs"""
     check50.run("python3 game.py").stdin("10", prompt=True).stdout(
-        regex("Song Name"), "Song Name:", regex=True
+        regex("Title:"), "Title:", regex=True
     ).kill()
 
 
@@ -59,7 +59,7 @@ def test_empty_artist_name():
     """playlist.py rejects empty artist name"""
     check50.run("python3 playlist.py").stdin("1", prompt=True).stdin(
         "", prompt=True
-    ).stdout(regex("Song Name"), "Song Name:", regex=True).kill()
+    ).stdout(regex("Title:"), "Title:", regex=True).kill()
 
 
 @check50.check(exists)
