@@ -43,7 +43,7 @@ def test_valid_songcount():
     """playlist.py accepts valid number of songs"""
     check50.run("python3 playlist.py").stdin("10", prompt=False).stdout(
         regex("Title:"), "Title:", regex=True
-    )
+    ).kill()
 
 
 @check50.check(exists)
@@ -80,9 +80,9 @@ def test_one_song_output():
 
     output = """1. Soothsayer by Backethead"""
 
-    check50.run("python3 playlist.py").stdin("7", prompt=False).stdin(
+    check50.run("python3 playlist.py").stdin("1", prompt=False).stdin(
         "Soothsayer", prompt=False
-    ).stdin("Buckethead", prompt=False).stdout(regex(output), output, regex=True)
+    ).stdin("Buckethead", prompt=False).stdout(regex(output), output, regex=True).kill()
 
 
 @check50.check(test_one_song)
@@ -125,4 +125,4 @@ def test_seven_song_output():
         "kuiper", prompt=False
     ).stdout(
         regex(output), output, regex=True
-    )
+    ).kill()
