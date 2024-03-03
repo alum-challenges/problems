@@ -2,6 +2,11 @@ import check50
 from re import escape
 
 
+def regex(text):
+    """match case-sensitively with any characters on either side"""
+    return rf"^.*{escape(text)}.*$"
+
+
 @check50.check()
 def exists():
     """playlist.py exists"""
@@ -37,7 +42,7 @@ def test_decimal_songcount():
 def test_valid_songcount():
     """playlist.py accepts valid number of songs"""
     check50.run("python3 game.py").stdin("10", prompt=True).stdout(
-        "Title:", "Title:", regex=True
+        regex("Title:"), "Title:", regex=True
     ).kill()
 
 
@@ -54,7 +59,7 @@ def test_empty_artist_name():
     """playlist.py rejects empty artist name"""
     check50.run("python3 playlist.py").stdin("1", prompt=True).stdin(
         "", prompt=True
-    ).stdout("Title:", "Title:", regex=True).kill()
+    ).stdout(regex("Title:"), "Title:", regex=True).kill()
 
 
 @check50.check(exists)
@@ -79,7 +84,7 @@ def test_one_song_output():
 
     check50.run("python3 playlist.py").stdin("7", prompt=False).stdin(
         "Soothsayer", prompt=False
-    ).stdin("Buckethead", prompt=False).stdout(output, output, regex=True).exit()
+    ).stdin("Buckethead", prompt=False).stdout(regex(output), output, regex=True).exit()
 
 
 @check50.check(test_one_song)
@@ -121,5 +126,5 @@ def test_seven_song_output():
     ).stdin(
         "kuiper", prompt=False
     ).stdout(
-        output, output, regex=True
+        regex(output), output, regex=True
     ).exit()
