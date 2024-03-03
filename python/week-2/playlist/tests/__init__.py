@@ -48,7 +48,7 @@ def test_valid_songcount():
 
 @check50.check(exists)
 def test_empty_song_name():
-    """playlist.py rejects empty song name"""
+    """playlist.py rejects empty song title"""
     check50.run("python3 playlist.py").stdin("1", prompt=True).stdin(
         "Soothsayer", prompt=True
     ).stdin("", prompt=True).reject()

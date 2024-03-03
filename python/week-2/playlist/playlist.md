@@ -50,7 +50,7 @@ to make a file called `playlist.py` where you’ll write your program.
 ## Specification
 You will implement two functions: `main` and `create_playlist`
 
-The `create_playlist` function should take one input as a parameter which is the number of songs they want to add. Then in two seperate prompts it should ask the user for a song name, then ask for the song's artist. If one of the inputs was not provided then reprompt the user starting from the song name. Once the user has successfully entered both values, add it to the playlist. The playlist should be of type `list` with items of type `dict`. The keys for each dictionary sould be `song` and `artist`. Repeat this process until the playlist is full (based on the number of songs given as the input parameter). When the list if full, return that list.
+The `create_playlist` function should take one input as a parameter which is the number of songs they want to add. Then in two seperate prompts it should ask the user for a song title, then ask for the song's artist. If one of the inputs was not provided then reprompt the user starting from the song title. Once the user has successfully entered both values, add it to the playlist. The playlist should be of type `list` with items of type `dict`. The keys for each dictionary sould be `title` and `artist`. Repeat this process until the playlist is full (based on the number of songs given as the input parameter). When the list if full, return that list.
 
 The `main` function should prompt the user for the number of songs they want to add to the playlist. If the input provided is not a positive number then it should reprompt the user. Then it will call the `create_playlist` function, passing in the number of songs, and assign the result into a variable. Then print the playlist with the following format:
 
@@ -85,7 +85,7 @@ if __name__ == "__main__":
 </details>
 
 # How to Test
-* Run your program with `python playlist.py`. Type `cat` and press Enter. Your program should ask again for the number of songs. Then type `1` and press Enter. At the next prompt, simply press Enter without typing. Your program should ask again for the song name. Type `Twenties` and press Enter. At the next prompt, press Enter again without typing anything. Your program should ask again, starting over with the song name. Finally, at the next prompt, type `Twenties` and press Enter. Then type `Ghost` and press Enter. Upon receiving valid input for all of the prompts, your program should output:
+* Run your program with `python playlist.py`. Type `cat` and press Enter. Your program should ask again for the number of songs. Then type `1` and press Enter. At the next prompt, simply press Enter without typing. Your program should ask again for the song title. Type `Twenties` and press Enter. At the next prompt, press Enter again without typing anything. Your program should ask again, starting over with the song title. Finally, at the next prompt, type `Twenties` and press Enter. Then type `Ghost` and press Enter. Upon receiving valid input for all of the prompts, your program should output:
 ```
 1. Twenties by Ghost
 ```

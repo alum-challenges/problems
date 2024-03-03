@@ -3,6 +3,7 @@ import pytest
 
 
 def test_one_song(monkeypatch):
+    """Test a one-ong playlist"""
     inputs = iter(["Soothsayer", "Buckethead"])
     monkeypatch.setattr("builtins.input", lambda _: next(inputs))
     output = create_playlist(1)
@@ -10,6 +11,7 @@ def test_one_song(monkeypatch):
 
 
 def test_seven_songs(monkeypatch):
+    """Test a seven-song playlist"""
     inputs = iter(
         [
             "Soothsayer",
