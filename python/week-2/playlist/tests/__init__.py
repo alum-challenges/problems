@@ -4,7 +4,7 @@ from re import escape
 
 def regex(text):
     """match case-sensitively with any characters on either side"""
-    return rf"^[\s\S]*{text}[\s\S]*$"
+    return rf"^[\s\S]*{escape(text)}[\s\S]*$"
 
 
 @check50.check()
