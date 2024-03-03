@@ -69,6 +69,13 @@ def main():
 
 
 def create_playlist(num_songs):
+    """Ask the user for a title and artist with the following prompts:
+
+    Title: 
+    Artist: 
+    
+    Return a list of dicts.
+    """
     # TODO
     raise NotImplementedError
 
