@@ -48,8 +48,8 @@ code playlist.py
 to make a file called `playlist.py` where you’ll write your program.
 
 ## Specification
-
-<script async id="asciicast-645107" src="https://asciinema.org/a/645107.js"></script>
+#### Demo
+[![asciicast demo](playlist.gif)](https://asciinema.org/a/645107)
 
 You will implement two functions: **`main`** and **`create_playlist`**
 
@@ -110,8 +110,10 @@ If you run into an error saying your file cannot be opened, retrace your steps t
 
 If you get an error saying `python` is not found, try replacing it with `python3` in the terminal command instead.
 
-You can execute the below to check your code using `check50`, a program that CS50 will use to test your code.
-> *Coming soon*
+You can execute the below to check your code using `check50`, a program that CS50 will use to test your code:
+```bash
+check50 alum-challenges/problems/main/python/week-2/playlist/tests
+```
 * **<span style="color: yellowgreen;">Green</span>** smiles mean your program has passed a test!
 * **<span style="color: firebrick;">Red</span>** frowns will indicate your program output something unexpected.
 * **<span style="color: orange;">Orange</span>** neutral faces mean you must fix the failed check before those checks can run.
