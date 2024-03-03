@@ -48,12 +48,14 @@ code playlist.py
 to make a file called `playlist.py` where you’ll write your program.
 
 ## Specification
-You will implement two functions: `main` and `create_playlist`
 
-The `create_playlist` function should take one input as a parameter which is the number of songs they want to add. Then in two seperate prompts it should ask the user for a song title, then ask for the song's artist. If one of the inputs was not provided then reprompt the user starting from the song title. Once the user has successfully entered both values, add it to the playlist. The playlist should be of type `list` with items of type `dict`. The keys for each dictionary sould be `title` and `artist`. Repeat this process until the playlist is full (based on the number of songs given as the input parameter). When the list if full, return that list.
+<script async id="asciicast-645107" src="https://asciinema.org/a/645107.js"></script>
 
-The `main` function should prompt the user for the number of songs they want to add to the playlist. If the input provided is not a positive number then it should reprompt the user. Then it will call the `create_playlist` function, passing in the number of songs, and assign the result into a variable. Then print the playlist with the following format:
+You will implement two functions: **`main`** and **`create_playlist`**
 
+The `create_playlist` function should take one input as a parameter, which is the number of songs they want to add, then ask for the songs using the following format. First, ask for the first song's title with a prompt saying: `Title: `. If the title input is empty, it should reject the input and reprompt, starting over from the title. Once a valid title has been entered, it should ask for the song's artist with a prompt saying: `Artist: `. If the artist input is empty, it should reprompt the the user, starting over from the song title (NOT just the artist). Once the user has successfully entered both values, add the song to the playlist. The playlist should be of type `list` with items of type `dict`. The keys for each dictionary sould be the song's `title` and `artist`. Repeat this process until the playlist is full, based on the number of songs given as the input paramete:. When the list if full, return the playlist.
+
+The `main` function should prompt the user for the number of songs they want to add to the playlist. If the input provided is not a positive number, then it should reprompt the user. Then it will call the `create_playlist` function, passing in the number of songs as an argument, and assign the result into a variable. Then it should print the playlist with the following format:
 ```
 1. Half Way There by Bon Jovi
 2. Never Gonna Give You Up by Rick Astley
@@ -61,7 +63,8 @@ The `main` function should prompt the user for the number of songs they want to 
 etc.
 ```
 
-Use this starting code. Edit only the body of `main` and `create_playlist`:
+
+Use this code as a template. Edit only the body of `main` and `create_playlist`:
 ```python
 def main():
     # TODO
