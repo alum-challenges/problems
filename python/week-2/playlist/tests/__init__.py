@@ -78,7 +78,7 @@ def test_seven_songs():
 def test_one_song_output():
     """playlist.py outputs a single-song playlist with correct format"""
 
-    output = """1. Soothsayer by Backethead"""
+    output = """1. Soothsayer by Buckethead"""
 
     check50.run("python3 playlist.py").stdin("1", prompt=False).stdin(
         "Soothsayer", prompt=False
@@ -89,7 +89,7 @@ def test_one_song_output():
 def test_seven_song_output():
     """playlist.py outputs a multi-song playlist with correct format"""
 
-    output = """1. Soothsayer by Backethead
+    output = """1. Soothsayer by Buckethead
 2. Everybody Wants to Rule the World by Tears for Fears
 3. Everything in Its Right Place by Radiohead
 4. Visa fran Utanmyra by Jan Johansson
