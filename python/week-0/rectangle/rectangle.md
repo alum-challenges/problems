@@ -70,9 +70,9 @@ a rectangle. Then you will calculate the perimeter, and return the number.
 
 If you run into an error saying your file cannot be opened, retrace your steps to be sure that you are inside your `rectangle` folder and have saved your `rectangle.py` file there.
 
-You can execute the below to check your code using `check50`, a program that CS50 will use to test your code.
+You can execute the below to check your code using `check50`, a program that CS50 will use to test your code:
 ```bash
-check50 alum-challenges/problems/main/python/0/rectangle/tests
+check50 alum-challenges/problems/main/python/week-0/rectangle/tests
 ```
 * **<span style="color: yellowgreen;">Green</span>** smiles mean your program has passed a test!
 * **<span style="color: firebrick;">Red</span>** frowns will indicate your program output something unexpected.
