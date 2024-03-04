@@ -48,12 +48,14 @@ code playlist.py
 to make a file called `playlist.py` where you’ll write your program.
 
 ## Specification
-You will implement two functions: `main` and `create_playlist`
+#### Demo
+[![asciicast demo](playlist.gif)](https://asciinema.org/a/645107)
 
-The `create_playlist` function should take one input as a parameter which is the number of songs they want to add. Then in two seperate prompts it should ask the user for a song name, then ask for the song's artist. If one of the inputs was not provided then reprompt the user starting from the song name. Once the user has successfully entered both values, add it to the playlist. The playlist should be of type `list` with items of type `dict`. The keys for each dictionary sould be `song` and `artist`. Repeat this process until the playlist is full (based on the number of songs given as the input parameter). When the list if full, return that list.
+You will implement two functions: **`main`** and **`create_playlist`**
 
-The `main` function should prompt the user for the number of songs they want to add to the playlist. If the input provided is not a positive number then it should reprompt the user. Then it will call the `create_playlist` function, passing in the number of songs, and assign the result into a variable. Then print the playlist with the following format:
+The `create_playlist` function should take one input as a parameter, which is the number of songs they want to add, then ask for the songs using the following format. First, ask for the first song's title with a prompt saying: `Title: `. If the title input is empty, it should reject the input and reprompt, starting over from the title. Once a valid title has been entered, it should ask for the song's artist with a prompt saying: `Artist: `. If the artist input is empty, it should reprompt the the user, starting over from the song title (NOT just the artist). Once the user has successfully entered both values, add the song to the playlist. The playlist should be of type `list` with items of type `dict`. The keys for each dictionary sould be the song's `title` and `artist`. Repeat this process until the playlist is full, based on the number of songs given as the input paramete:. When the list if full, return the playlist.
 
+The `main` function should prompt the user for the number of songs they want to add to the playlist. If the input provided is not a positive number, then it should reprompt the user. Then it will call the `create_playlist` function, passing in the number of songs as an argument, and assign the result into a variable. Then it should print the playlist with the following format:
 ```
 1. Half Way There by Bon Jovi
 2. Never Gonna Give You Up by Rick Astley
@@ -61,7 +63,8 @@ The `main` function should prompt the user for the number of songs they want to 
 etc.
 ```
 
-Use this starting code. Edit only the body of `main` and `create_playlist`:
+
+Use this code as a template. Edit only the body of `main` and `create_playlist`:
 ```python
 def main():
     # TODO
@@ -69,6 +72,13 @@ def main():
 
 
 def create_playlist(num_songs):
+    """Ask the user for a title and artist with the following prompts:
+
+    Title: 
+    Artist: 
+    
+    Return a list of dicts.
+    """
     # TODO
     raise NotImplementedError
 
@@ -85,7 +95,7 @@ if __name__ == "__main__":
 </details>
 
 # How to Test
-* Run your program with `python playlist.py`. Type `cat` and press Enter. Your program should ask again for the number of songs. Then type `1` and press Enter. At the next prompt, simply press Enter without typing. Your program should ask again for the song name. Type `Twenties` and press Enter. At the next prompt, press Enter again without typing anything. Your program should ask again, starting over with the song name. Finally, at the next prompt, type `Twenties` and press Enter. Then type `Ghost` and press Enter. Upon receiving valid input for all of the prompts, your program should output:
+* Run your program with `python playlist.py`. Type `cat` and press Enter. Your program should ask again for the number of songs. Then type `1` and press Enter. At the next prompt, simply press Enter without typing. Your program should ask again for the song title. Type `Twenties` and press Enter. At the next prompt, press Enter again without typing anything. Your program should ask again, starting over with the song title. Finally, at the next prompt, type `Twenties` and press Enter. Then type `Ghost` and press Enter. Upon receiving valid input for all of the prompts, your program should output:
 ```
 1. Twenties by Ghost
 ```
@@ -100,8 +110,10 @@ If you run into an error saying your file cannot be opened, retrace your steps t
 
 If you get an error saying `python` is not found, try replacing it with `python3` in the terminal command instead.
 
-You can execute the below to check your code using `check50`, a program that CS50 will use to test your code.
-> *Coming soon*
+You can execute the below to check your code using `check50`, a program that CS50 will use to test your code:
+```bash
+check50 alum-challenges/problems/main/python/week-2/playlist/tests
+```
 * **<span style="color: yellowgreen;">Green</span>** smiles mean your program has passed a test!
 * **<span style="color: firebrick;">Red</span>** frowns will indicate your program output something unexpected.
 * **<span style="color: orange;">Orange</span>** neutral faces mean you must fix the failed check before those checks can run.
