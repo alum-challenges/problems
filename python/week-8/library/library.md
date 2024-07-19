@@ -7,18 +7,18 @@ topics: "[\"Classes\"]"
 ---
 
 # Library
-## Backgroud
-Library is a popular place to get a book when you need one. You might use it to get school books, or just to borrow a book to read. But have you ever wondered how does the registration app works? Or what happends when you borrow a book? 
+## Background
+Library is a popular place to get a book when you need one. You might use it to get school books, or just to borrow a book to read. But have you ever wondered how the registration app works? Or what happens when you borrow a book? 
 
-In a file called `library.py`, implement a program in Python where you would simulate that app, you should do this by rewriting the distobution code bellow. The program should have two classes Book and Library. 
+In a file called `library.py`, implement a program in Python where you would simulate that app, you should do this by rewriting the distribution code below. The program should have two classes: Book and Library. 
 
 ## Understanding
 
 Each book has a title, author and a genre.
 
-A book can be borrowed, and returned. Also you can display info about each book would be structured as `title by author`.
+A book can be borrowed, and returned. Also you can display info about each book that would be structured as `title by author`.
 
-In a Library you can add a book to its collection. Find a book by its title and author. Find all books that are available, borrowed or a spesific genre.
+In a Library you can add a book to its collection. Find a book by its title and author. Find all books that are available, borrowed or a specific genre.
 
 
 # Before You Begin
@@ -39,18 +39,18 @@ to change the  directories into that folder. You should now see your terminal pr
 ```
 code library.py
 ```
-to make a file called `library.py` where you'll write your programm.
+to make a file called `library.py` where you'll write your program.
 
 ## Specification
 Book Class
 
-- `__init__` should initialize a book given `title`, `author`, `genre`, `is_available` where `title`, `author`, `genre`are passing in when creating an instance, and `is_available` represents if the book is available or not.
+- `__init__` should initialize a book given `title`, `author`, `genre`, `is_available` where `title`, `author`, `genre` are passing in when creating an instance, and `is_available` represents if the book is available or not.
 - `borrow` method should change `is_available` to false.
 - `return_book` method should change `is_available` to true.
 - `display_info` method should return the string of the book as `title by author`
 
 Library Class
-- `__init__` should have an atribute to store all books called `books`.
+- `__init__` should have an attribute to store all books called `books`.
 - `add_book` method should append the `book` given to `books`.
 - `find_book` method should find the book given `title` and `author` and return it, else should return `None`
 - `list_available_books` method should list all available books, if there are none it should return an empty list.
@@ -116,11 +116,11 @@ Rewrite the code into a Class version of it.
 # How To Test
 Here’s how to test your code manually:
 
-Open your `library.py` file, create two Book instances (you can use this books as input: "The night, The fool and The Dead by Steve Cole, Scifi", "The Name of the Wind by Patrick Rothfuss, Fantasy"). Create a library instence.
+Open your `library.py` file, create two Book instances (you can use this books as input: "The night, The fool and The Dead by Steve Cole, Scifi", "The Name of the Wind by Patrick Rothfuss, Fantasy"). Create a library instance.
 
 - Use the `add_book` method to add at least one book to the library. Then print all of the books. You should see the books you added.
 
--  Use the `find book` method to find the a book you haven't added. It should return `None`. Then use it to find the book that is already there, and it should return the books instance. 
+-  Use the `find book` method to find a book you haven't added. It should return `None`. Then use it to find the book that is already there, and it should return the book's instance. 
 
 Use the `borrow` method on a book. 
 
@@ -137,7 +137,9 @@ Use the `return_book` method on a book.
 If you run into an error saying your file cannot be opened, retrace your steps to be sure that you are inside your `library` folder and have saved your `library.py` file there.
 
 You can execute the below to check your code using `check50`, a program that CS50 will use to test your code:
-> *Coming soon*
+```bash
+check50 alum-challenges/problems/main/python/week-8/library/tests
+```
 
 * **<span style="color: yellowgreen;">Green</span>** smiles mean your program has passed a test!
 * **<span style="color: firebrick;">Red</span>** frowns will indicate your program output something unexpected.
