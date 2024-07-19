@@ -9,17 +9,20 @@ def exists():
 
 @check50.check(exists)
 def test_adds_books():
-    """Library.add_book adds books to library.books"""
-    check50.run("pytest test_file.py -k 'test_add_book'").exit(0)
-
+    """Library.add_book adds a book to library.books"""
+    exit = check50.run("pytest test_file.py -k 'test_add_book'").exit()
+    if exit == 0:
+        raise check50.Failure(f"Expected book to be added inside books.")
+    
 @check50.check(test_adds_books)
 def test_find_book():
-    """Library.findbook finds an added book"""
+    """Library.find_book finds an added book"""
     check50.run("pytest test_file.py -k 'test_find_book'").exit(0)
+    
 
 @check50.check(test_adds_books)
 def test_find_book_caseinsensetive():
-    """Library.findbook finds a book case insensitive"""
+    """Library.find_book finds a book case insensitive"""
     check50.run("pytest test_file.py -k 'test_find_book_caseinsensetive'").exit(0)
 
 @check50.check(test_adds_books)
