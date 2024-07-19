@@ -11,7 +11,7 @@ def exists():
 def test_adds_books():
     """Library.add_book adds a book to library.books"""
     exit = check50.run("pytest test_file.py -k 'test_add_book'").exit(0)
-    if exit == 0:
+    if exit == 1:
         raise check50.Failure(f"Expected book to be added inside books.")
     
 @check50.check(test_adds_books)
