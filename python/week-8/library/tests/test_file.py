@@ -35,6 +35,7 @@ def test_find_book(library_s, all_books_s):
 def test_find_book_caseinsensetive(library_s, all_books_s):
     # case insencetive
     assert library_s.find_book("the name of the wind", "Patrick Rothfuss") == all_books_s[3]
+    assert library_s.find_book("THE NAME OF THE WIND", "PATRICK ROTHFUSS") == all_books_s[3]
 
 def test_list_available_books(library_s, all_books_s):
     assert len(library_s.list_available_books()) == len(all_books_s)
