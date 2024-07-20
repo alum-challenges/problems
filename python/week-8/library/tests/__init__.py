@@ -60,10 +60,9 @@ def test_return_book():
 @check50.check(test_adds_books)
 def test_list_genre_books():
     """Library.list_genre_books lists books with a specific genre"""
-    # exit = 
-    check50.run("pytest test_file.py -k 'test_find_book'").exit(0)
-    # if exit == 1:
-    #     raise check50.Failure(f"Expected Library.list_genre_books to list books with a specific genre.")
+    exit = check50.run("pytest test_file.py -k 'test_list_genre_books'").exit(0)
+    if exit == 1:
+        raise check50.Failure(f"Expected Library.list_genre_books to list books with a specific genre.")
 
 @check50.check(test_adds_books)
 def test_display_info():
