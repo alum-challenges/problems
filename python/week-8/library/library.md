@@ -113,6 +113,16 @@ Rewrite the code into a Class version of it.
         <p>Class methods and instances <a href="https://docs.python.org/3/tutorial/classes.html#class-objects">https://docs.python.org/3/tutorial/classes.html#class-objects</a></p>
 </details>
 
+# Challenge
+
+If up for a challenge, optionally implement a program that asks for user input to interact with your library. The program should support borrowing, returning, and searching for books using all of the methods described.
+
+Remember to add at the if name main clause bottom of the file! 
+```py
+if __name__ == "__main__":
+    main()
+```
+
 # How To Test
 Here’s how to test your code manually:
 
