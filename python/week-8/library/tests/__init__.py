@@ -66,7 +66,7 @@ def test_list_genre_books():
 
 @check50.check(test_adds_books)
 def test_display_info():
-    """Library.display_info displays the information for a book in a correct format"""
+    """Book.display_info displays the information for a book in a correct format"""
     exit = check50.run("pytest test_file.py -k 'test_display_info'").exit()
     if exit == 1:
-        raise check50.Failure(f"Expected Library.display_info to return the information for a book in the correct format.")
+        raise check50.Failure(f"Expected Book.display_info to return the information for a book in the correct format.")
