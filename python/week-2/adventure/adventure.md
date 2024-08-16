@@ -51,6 +51,8 @@ Response: `You take {choice 1} {choice 2} and add to your inventory.`
 #### `Count {item}`
 Response: `You have {item count} {item} in your inventory.`
 
+Note that the proper name for the item is "apples" while the take command also accept either "apples" or "apple".
+
 ## Before You Begin
 Execute cd by itself in your terminal window. You should find that your terminal window’s prompt resembles the below:
 ```bash
