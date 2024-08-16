@@ -7,7 +7,7 @@ topics: "[\"Conditionals\", \"Loops\", \"Pattern Matching\", \"Match\", \"Case\"
 ---
 # Match Adventure
 ## Backgroud
-When it comes to programming, one of the classic examples is a text-based adventure game where you type in commands and explore your environment. In a text adventure, you type in commands such as "Go west" and "Pick up an apple", and get responses back based on the command the subjects chosen.
+When it comes to programming, one of the classic examples is a text-based adventure game where you type in commands and explore your environment. In a text adventure, you type in commands such as "Go west" and "Pick up an apple", and get responses back based on the command chosen.
 
 We are going to explore using the magic of Structural Pattern Matching, as introduced in PEP 636.
 
