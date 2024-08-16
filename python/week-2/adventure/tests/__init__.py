@@ -70,6 +70,17 @@ def test_valid_go():
 
 
 @check50.check(test_no_ifs)
+def test_direction():
+    """adventure.py gives correct direction for \"Check compass\" command"""
+    DIR = "You are facing south.\n> "
+    process = check50.run("python3 adventure.py")
+    process.stdin(f"Go south", prompt=False).stdin(
+        f"Check compass", prompt=False
+    ).stdout(regex(DIR), DIR, regex=True)
+    process.kill()
+
+
+@check50.check(test_no_ifs)
 def test_invalid_take_command():
     """adventure.py rejects invalid Take command"""
     check50.run("python3 adventure.py").stdin("Take an arrow", prompt=True).stdout(

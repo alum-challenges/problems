@@ -23,7 +23,7 @@ INVENTORY = {
     "firewood": 0,
 }
 
-direction = None
+direction = "north"
 ```
 
 Your program should accept the following commands, and have the following outputs. Words in curly braces `{}` can be any value in the list separated by a `/`.
@@ -45,8 +45,13 @@ Valid directions should change the `direction` variable to the matched value.
 Going home should print end the game and exit the program.
 
 If the word after Go is not a valid option, the response is `You cannot go {choice 1}. Valid directions are north, south, east, west, and home.`
+#### `Check compass`
+Response: `You are facing {current direction}.`
+
+The default value, per the template, should be `north`.
 #### `Take {an/some} {apple/apples/herbs/water/firewood}`
 Response: `You take {choice 1} {choice 2} and add to your inventory.`
+
 1 of the chosen item should be added to the inventory.
 #### `Count {item}`
 Response: `You have {item count} {item} in your inventory.`
@@ -89,7 +94,7 @@ INVENTORY = {
     "firewood": 0,
 }
 
-direction = None
+direction = "north"
 ```
 
 Your program should start by printing the following line and then a prompt for input. Each prompt in the program should be at the beginning of its own line with a right angle bracket followed by a space: `> `
@@ -120,7 +125,10 @@ You take some herbs and add to your inventory.
 > Count herbs
 
 You have 1 herbs in your inventory.
->
+> Check compass
+
+You are facing south.
+> 
 ```
 
 After the above sequence, your inventory and direction values should now be:
