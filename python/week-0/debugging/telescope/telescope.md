@@ -39,9 +39,9 @@ We have implemented a program to calculate this distance, given the height of an
 There is just one problem. It has bugs! Use the VSCode debugger to fix the bugs and make the program work properly.
 
 ## Before You Begin
-**Turn off all LSPs, Linters, and Autocompletion help if using a local IDE.** We strongly recommend using the Codespace and/or disabling any extra tools for this exercise to make the most of the opportunity.
+**Turn off all LSPs, Linters, and Autocompletion help if using a local IDE.** We strongly recommend using the [Codespace](https://cs50.dev/) and/or disabling any extra tools for this exercise to make the most of the opportunity.
 
-Execute cd by itself in your terminal window. You should find that your terminal window’s prompt resembles the below:
+Execute `cd` by itself in your terminal window. You should find that your terminal window’s prompt resembles the below:
 ```bash
 $
 ```
@@ -68,9 +68,9 @@ code telescope.py
 to open the new `telescope.py` where you will debug the existing program.
 
 ## Specification
-The resulting program should implement a function called `zoom` which accepts two `float`s (the size of an object and the magnification level of the telescope), and returns the distance to the object as an `float`.
+The resulting program should implement a function called `zoom` which accepts two `float`s (the size of an object and the magnification level of the telescope), and returns the distance to the object as a `float`.
 
-The program should prompt the user for the magnification level on the dial and the size of the object in meters. It should then calcualte the distance and print it as `The object is {value} meters away.` The output should be accurate to 2 decimal places.
+The program should prompt the user for the magnification level on the dial and the size of the object in meters. It should then calculate the distance and print it as `The object is {value} meters away.` The output should be accurate to 2 decimal places.
 
 <details>
     <summary>Hints</summary>
