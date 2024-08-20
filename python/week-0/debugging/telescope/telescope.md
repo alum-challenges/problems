@@ -26,13 +26,15 @@ One of the tools beloved by scientists of all kinds is the telescope. The concep
 Today we will be studying the concept of scope in programming with the telescope of a debugger!
 
 ## Understanding
-A telescope's magnification increases the size of everything in it's field of view by a factor set by the dial. Assume that we have a telescope set up so that at x1 zoom (no magnification), an object that is 1 meter tall fills our view when we are 1 meter away from the object. Suppose we see a friend in the distance who is 1.77 meters tall, and we want to know how far away our friend is. We can calculate it using this relationship with our telescope!
+A telescope's magnification increases the size of everything in it's field of view by a factor set by the dial. Assume that we have a telescope set up so that at x1 zoom (no magnification), an object that is 1 meter tall and 1 meter away from the telescope fills the view. Suppose we see a friend in the distance who is 1.77 meters tall, and we want to know how far away our friend is. We can calculate it using this relationship with our telescope!
 
 First, we turn the dial until our friend fills up our entire view (their head is at the top and their feet are at the bottom). The formula for that distance is:
 
 $\[
-D = \text{Object Height} \times \frac{1 \text{ meter}}{\text{Height at 1 meter with no magnification}} \times M
+D = \text{Object Height} \times \frac{1 \text{ meter}}{1 \text{ meter}} \times Magnification
 \]$
+
+For example, if our 1.77 m friend fills the view at x2 zoom, our friend must be 3.54 meters away.
 
 We have implemented a program to calculate this distance, given the height of an object (or friend) and the zoom setting it took to make them fill up the view.
 
