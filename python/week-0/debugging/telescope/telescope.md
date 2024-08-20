@@ -31,7 +31,7 @@ A telescope's magnification increases the size of everything in it's field of vi
 First, we turn the dial until our friend fills up our entire view (their head is at the top and their feet are at the bottom). The formula for that distance is:
 
 $\[
-D = \text{Object Height} \times \frac{1 \text{ meter}}{1 \text{ meter}} \times Magnification
+D = \text{Object Height} \times \frac{\text{Base Height = 1 meter}}{\text{Base Distance = 1 meter}} \times Magnification
 \]$
 
 For example, if our 1.77 m friend fills the view at x2 zoom, our friend must be 3.54 meters away.
