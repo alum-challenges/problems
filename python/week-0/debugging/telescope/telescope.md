@@ -20,7 +20,7 @@ topics: "[\"Debugging\", \"Functions\", \"Variables\", \"Scope\"]"
     <li><a href="https://cs50.harvard.edu/python/2022/shorts/variables/">Variables</a></li>
 </ol>
 
-## Backgroud
+## Background
 One of the tools beloved by scientists of all kinds is the telescope. The concept of magnifying with glass lenses, both for extremely small things close by and extremely large things very far away, has been an integral part of studying nature from every angle we can.
 
 Today we will be studying the concept of scope in programming with the telescope of a debugger!
