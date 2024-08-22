@@ -1,8 +1,10 @@
 def question_zero():
     """
     Find str methods that could either directly change, or be combined together
-    to change the str "  CS50 " to "CS50". You can assume the text in the middle
-    is a single word.
+    to change the str "  CS50 " to "CS50".
+
+    There could be any number of spaces on either side. You can assume the text
+    in the middle is a single word.
 
     Return a dict with str methods as keys and single line snippets of code as
     values. These lines of code should act on a str variable called `text` and
@@ -97,8 +99,43 @@ def question_two():
     of them overlap (an X is also a Y). You may be surprised at how much overlap
     there is. Others may seem similar but have no overlap (an X cannot be a Y).
 
-     If confused, look up "difference between X and Y in python" where X and Y
-     are two (or more) similar Python terms.
+    If confused, look up "difference between X and Y in python" where X and Y
+    are two (or more) similar Python terms.
+
+    Example problem and answer:
+        text = input('Enter text: ')
+        print('Hello, ' + text)
+
+    Example answer:
+        {
+            "text": [
+                "variable", "global variable", "identifier",
+            ],
+            "=": [
+                "operator",
+            ],
+            "input": [
+                "variable", "global variable", "function name", "identifier",
+            ],
+            "'Enter text: '": [
+                "argument",
+            ],
+            "input('Enter text: ')": [
+                "function call", "expression"
+            ],
+            "text = input('Enter text: ')": [
+                "assignment", "statement",
+            ],
+            "print": [
+                "variable", "global variable", "function name", "identifier",
+            ],
+            "'Hello, ' + text": [
+                "argument", "expression",
+            ],
+            "print('Hello, ' + text)": [
+                "function call", "expression", "statement",
+            ],
+        }
     """
     return {
         "def": [
