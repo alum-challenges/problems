@@ -3,6 +3,7 @@ title: Quiz 0
 author: Makaze
 course: CS50 Python
 week: 0
+<<<<<<< Updated upstream
 topics: "[\"Quizzes\", \"Functions\", \"Variables\"]"
 ---
 # This Is Quiz 0
@@ -14,6 +15,14 @@ The quiz consists of a Python file where each function is a question. The answer
 **Turn off all LSPs, Linters, and Autocompletion help if using a local IDE.** We strongly recommend using the [Codespace](https://cs50.dev/) and/or disabling any extra tools for this exercise to make the most of the opportunity.
 
 Execute `cd` by itself in your terminal window. You should find that your terminal window’s prompt resembles the below:
+=======
+topics: "[\"Functions\", \"Variables\"]"
+---
+# Quiz 0
+
+## Before You Begin
+Execute cd by itself in your terminal window. You should find that your terminal window’s prompt resembles the below:
+>>>>>>> Stashed changes
 ```bash
 $
 ```
@@ -21,7 +30,11 @@ Next execute
 ```bash
 mkdir quiz0
 ```
+<<<<<<< Updated upstream
 to make a folder called `quiz0`.
+=======
+to make a folder called `quiz0` in your codespace.
+>>>>>>> Stashed changes
 
 Then execute
 ```bash
@@ -31,6 +44,7 @@ to change directories into that folder.
 
 You should now see your terminal prompt as `quiz0/ $`. You can now execute
 ```bash
+<<<<<<< Updated upstream
 wget https://raw.githubusercontent.com/alum-challenges/problems/main/python/week-0/quiz0/quiz0.py
 ```
 to download the Quiz 0 program. Then execute
@@ -61,6 +75,22 @@ check50 alum-challenges/problems/main/python/week-0/quiz/tests
 
 If you run into an error saying your file cannot be opened, retrace your steps to be sure that you are inside your `quiz0` folder and have saved your `quiz0.py` file there.
 
+=======
+wget https://github.com/alum-challenges/problems/raw/refs/heads/main/python/week-0/quiz0/quiz0.py
+```
+and then
+```bash
+code quiz0.py
+```
+to download the quiz file called `quiz0.py` where you’ll answer questions in the form of a Python program.
+
+
+# How to Test
+You can execute the below to check your answers using `check50`, a program that CS50 will use to test your code:
+```bash
+check50 alum-challenges/problems/main/python/week-0/quiz0/tests
+```
+>>>>>>> Stashed changes
 * **<span style="color: yellowgreen;">Green</span>** smiles mean your program has passed a test!
 * **<span style="color: firebrick;">Red</span>** frowns will indicate your program output something unexpected.
 * **<span style="color: orange;">Orange</span>** neutral faces mean you must fix the failed check before those checks can run.
@@ -69,3 +99,7 @@ Visit the URL that `check50` outputs to see the input `check50` handed to your p
 
 ## How to Submit
 > *Coming soon*
+<<<<<<< Updated upstream
+=======
+
+>>>>>>> Stashed changes
