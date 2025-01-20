@@ -19,7 +19,7 @@ def pytest_question_zero():
 @check50.check(exists)
 def pytest_question_one():
     """question one answered correctly"""
-    check50.run("pytest --tb=no --color=no -q testing.py -k 'test_question1'").stdout(
+    check50.run("pytest --tb=no --color=no -q testing.py -k 'test_question1 and not test_question10'").stdout(
         "1 passed"
     ).exit(0)
 
