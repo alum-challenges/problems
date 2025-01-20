@@ -2,8 +2,8 @@ submit50:
   files: &submit50_files
     - !exclude "*"
     - !include "testing.py"
-    - !include "quiz0.py"
-    - !require quiz0.py
+    - !include "quiz1.py"
+    - !require quiz1.py
   style: false
 
 check50:
