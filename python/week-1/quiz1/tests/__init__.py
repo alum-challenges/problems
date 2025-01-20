@@ -3,8 +3,8 @@ import check50
 
 @check50.check()
 def exists():
-    """quiz0.py exists"""
-    check50.exists("quiz0.py")
+    """quiz1.py exists"""
+    check50.exists("quiz1.py")
     check50.include("testing.py")
 
 
@@ -68,5 +68,29 @@ def pytest_question_six():
 def pytest_question_seven():
     """question seven answered correctly"""
     check50.run("pytest --tb=no --color=no -q testing.py -k 'test_question7'").stdout(
+        "1 passed"
+    ).exit(0)
+
+
+@check50.check(exists)
+def pytest_question_eight():
+    """question eight answered correctly"""
+    check50.run("pytest --tb=no --color=no -q testing.py -k 'test_question8'").stdout(
+        "1 passed"
+    ).exit(0)
+
+
+@check50.check(exists)
+def pytest_question_nine():
+    """question nine answered correctly"""
+    check50.run("pytest --tb=no --color=no -q testing.py -k 'test_question9'").stdout(
+        "1 passed"
+    ).exit(0)
+
+
+@check50.check(exists)
+def pytest_question_ten():
+    """question ten answered correctly"""
+    check50.run("pytest --tb=no --color=no -q testing.py -k 'test_question10'").stdout(
         "1 passed"
     ).exit(0)
