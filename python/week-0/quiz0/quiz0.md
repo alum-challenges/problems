@@ -13,6 +13,9 @@ The quiz consists of a Python file where each function is a question. The answer
 ## Before You Begin
 **Turn off all LSPs, Linters, and Autocompletion help if using a local IDE.** We strongly recommend using the [Codespace](https://cs50.dev/) and/or disabling any extra tools for this exercise to make the most of the opportunity.
 
+> [!NOTE]
+> Double quotes cannot be used inside of double quoted strings without being escaped. Question 7 may require some special consideration to account for this.
+
 Execute `cd` by itself in your terminal window. You should find that your terminal window’s prompt resembles the below:
 ```bash
 $

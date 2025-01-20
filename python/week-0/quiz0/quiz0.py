@@ -123,11 +123,11 @@ def question7():
 
     For example (with non-existent method names):
     {
-            # If method1 does this by itself with no arguments:
+    # If method1 does this by itself with no arguments:
         "method1": "text.method1()",
-            # If method2 does this with some argument:
+    # If method2 does this with some argument:
         "method2": "text.method2(argument)",
-            # If method3 and method4 can be used together to make it happen:
+    # If method3 and method4 can be used together to make it happen:
         "method3": "text.method3().method4()",
         "method4": "text.method3().method4()",
     }
@@ -136,15 +136,14 @@ def question7():
 
     Hints:
       * There are at least 4 such methods.
-      * If one of the ways you found uses more than one method, you are allowed
-        to use the same snippet for each of the involved methods.
-      * There are at least 4 methods.
       * If a way you found uses more than one method in a chain, you may use the
-      same snippet for each chained answer.
+        same snippet for each chained answer.
+      * Double quotes will not work inside of an already double quoted str
+        literal unless escaped with a backslash.
     """
     return {
-        "method1": "code here",
-        "method2": "code here",
-        "method3": "code here",
-        "method4": "code here",
+        "method1": "text",
+        "method2": "text",
+        "method3": "text",
+        "method4": "text",
     }
