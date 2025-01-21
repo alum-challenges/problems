@@ -1,106 +1,84 @@
 from quiz1 import *
-import random
+from hashlib import sha256
 import pytest
 
-r = random.randint
 
-
-def val():
-    s = [
-        298,
-        85,
-        179,
-        111,
-        298,
-        85,
-        179,
-        111,
-        524,
-        179,
-        1,
-        108,
-        339,
-        179,
-        111,
-        111,
-        856,
-        363,
-        856,
-        59,
-        111,
-        58,
-        122,
-        449,
-        8,
-        97,
-        90,
-        97,
-        449,
-        524,
-        179,
-        339,
-        147,
-        472,
-        339,
-        179,
-        111,
-        111,
-        856,
-        224,
-        363,
-        856,
-        59,
-        111,
-        58,
-        224,
-        181,
-        37,
-        140,
-    ]
-    for i in range(len(s)):
-        random.seed(s[i])
-        yield f"{chr(r(0, 255))}"
+def hash(value):
+    return sha256(str(value).encode()).hexdigest()
 
 
 def test_question0():
-    assert question0() == "".join(val())[:2], "Incorrect"
+    assert (
+        hash(question0())
+        == "935f68319d4f227e02bfd54a0ddf85b8a242e42a4277aa5ef5eaab691710924e"
+    ), "Incorrect"
 
 
 def test_question1():
-    assert question1() == "".join(val())[2:6], "Incorrect"
+    assert (
+        hash(question1())
+        == "d5fdb221055ea62b50ae39ea2305454218ff12d8527a841c27c9d07c82aa5cca"
+    ), "Incorrect"
 
 
 def test_question2():
-    assert question2() == "".join(val())[6:10], "Incorrect"
+    assert (
+        hash(question2())
+        == "7dd530c4d36da47cd33396718ef1fa1e8c0f7d91ee551d7fdc1c73aa65edb454"
+    ), "Incorrect"
 
 
 def test_question3():
-    assert question3() == "".join(val())[10], "Incorrect"
+    assert (
+        hash(question3())
+        == "3f39d5c348e5b79d06e842c114e6cc571583bbf44e4b0ebfda1a01ec05745d43"
+    ), "Incorrect"
 
 
 def test_question4():
-    assert question4() == "".join(val())[11], "Incorrect"
+    assert (
+        hash(question4())
+        == "df7e70e5021544f4834bbee64a9e3789febc4be81470df629cad6ddb03320a5c"
+    ), "Incorrect"
 
 
 def test_question5():
-    assert question5() == "".join(val())[12:17], "Incorrect"
+    assert (
+        hash(question5())
+        == "185f8db32271fe25f561a6fc938b2e264306ec304eda518007d1764826381969"
+    ), "Incorrect"
 
 
 def test_question6():
-    assert question6() == "".join(val())[17:22], "Incorrect"
+    assert (
+        hash(question6())
+        == "78ae647dc5544d227130a0682a51e30bc7777fbb6d8a8f17007463a3ecd1d524"
+    ), "Incorrect"
 
 
 def test_question7():
-    assert question7() == "".join(val())[22:27], "Incorrect"
+    assert (
+        hash(question7())
+        == "4945a70fa7f9c13fe1931a3372ac5798140d42eba74d0dd805a4a216ed3a8142"
+    ), "Incorrect"
 
 
 def test_question8():
-    assert question8() == "".join(val())[27:31], "Incorrect"
+    assert (
+        hash(question8())
+        == "bbfcd4160a1e8674dac62292ae48be4785262ad7078f9ec11b74a254ce70fa06"
+    ), "Incorrect"
 
 
 def test_question9():
-    assert question9() == "".join(val())[31:34], "Incorrect"
+    assert (
+        hash(question9())
+        == "9fe657278d3434ae601b1950f1d03f41cb41dedf2cb47b2f1e7b8f997cdefaa2"
+    ), "Incorrect"
 
 
 def test_question10():
-    assert question10() == "".join(val())[34:], "Incorrect"
+    assert (
+        hash(question10())
+        == "715cd82c9774d46243a8a12ea03ea79e1457df9616785fda292f1d1f3bf0893c"
+    ), "Incorrect"

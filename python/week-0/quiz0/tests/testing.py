@@ -1,44 +1,60 @@
 from quiz0 import *
+from hashlib import sha256
 import random
 import pytest
 
-r = random.randint
 
-
-def val():
-    s = [58, 179, 85, 59, 179, 8, 167, 59, 53, 380, 671, 108, 56, 1]
-    for i in range(len(s)):
-        random.seed(s[i])
-        yield f"{chr(r(0, 255))}"
+def hash(value):
+    return sha256(str(value).encode()).hexdigest()
 
 
 def test_question0():
-    assert question0() == "".join(val())[:3], "Incorrect"
+    assert (
+        hash(question0())
+        == "cb8379ac2098aa165029e3938a51da0bcecfc008fd6795f401178647f96c5b34"
+    ), "Incorrect"
 
 
 def test_question1():
-    assert question1() == "".join(val())[3:9], "Incorrect"
+    assert (
+        hash(question1())
+        == "7187f0675eb3827939741acf7342ba78836ecec21a31ecf3f34a55309d3bee8a"
+    ), "Incorrect"
 
 
 def test_question2():
-    assert question2() == "".join(val())[9], "Incorrect"
+    assert (
+        hash(question2())
+        == "6b23c0d5f35d1b11f9b683f0b0a617355deb11277d91ae091d399c655b87940d"
+    ), "Incorrect"
 
 
 def test_question3():
-    assert question3() == "".join(val())[10], "Incorrect"
+    assert (
+        hash(question3())
+        == "a9f51566bd6705f7ea6ad54bb9deb449f795582d6529a0e22207b8981233ec58"
+    ), "Incorrect"
 
 
 def test_question4():
-    assert question4() == "".join(val())[11], "Incorrect"
+    assert (
+        hash(question4())
+        == "df7e70e5021544f4834bbee64a9e3789febc4be81470df629cad6ddb03320a5c"
+    ), "Incorrect"
 
 
 def test_question5():
-    random.seed(56)
-    assert question5() == r(0, 255), "Incorrect"
+    assert (
+        hash(question5())
+        == "ef2d127de37b942baad06145e54b0c619a1f22327b2ebbcfbec78f5564afe39d"
+    ), "Incorrect"
 
 
 def test_question6():
-    assert question6() == "".join(val())[13], "Incorrect"
+    assert (
+        hash(question6())
+        == "3f39d5c348e5b79d06e842c114e6cc571583bbf44e4b0ebfda1a01ec05745d43"
+    ), "Incorrect"
 
 
 def test_question7():
