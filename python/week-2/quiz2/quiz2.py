@@ -2,14 +2,14 @@ def question0():
     """
     What is the keyword used to start an infinite loop in Python?
     """
-    return ""
+    return "TODO"
 
 
 def question1():
     """
     What is the keyword used to halt and exit a loop in Python?
     """
-    return ""
+    return "TODO"
 
 
 def question2():
@@ -17,14 +17,14 @@ def question2():
     What is the keyword used to skip to the next iteration of the loop in
     Python?
     """
-    return ""
+    return "TODO"
 
 
 def question3():
     """
     What is the keyword used to start a loop over a collection in Python?
     """
-    return ""
+    return "TODO"
 
 
 def question4():
@@ -45,7 +45,7 @@ def question4():
     G. I and IV
     H. All of the above
     """
-    return "Z"
+    return "TODO"
 
 
 def question5():
@@ -58,7 +58,7 @@ def question5():
     C. dict
     D. set
     """
-    return "Z"
+    return "TODO"
 
 
 def question6():
@@ -71,7 +71,7 @@ def question6():
     C. dict
     D. set
     """
-    return "Z"
+    return "TODO"
 
 
 def question7():
@@ -83,7 +83,7 @@ def question7():
     C. dict
     D. set
     """
-    return ""
+    return "TODO"
 
 
 def question8():
@@ -96,7 +96,7 @@ def question8():
     C. dict
     D. set
     """
-    return ""
+    return "TODO"
 
 
 def question9():
@@ -113,7 +113,7 @@ def question9():
 
             x -= 1
     """
-    return ""
+    return "TODO"
 
 
 def question10():
@@ -125,7 +125,7 @@ def question10():
         for value in x:
             print(value * 3, end=" ")
     """
-    return ""
+    return "TODO"
 
 
 def question11():
@@ -137,4 +137,4 @@ def question11():
         for value in x:
             print(value * 3, end=" ")
     """
-    return ""
+    return "TODO"
