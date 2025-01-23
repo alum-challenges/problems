@@ -103,6 +103,9 @@ def question9():
     """
     What does this print?
 
+    Hint: The `end` value given in print() will appear after every printed item,
+    *including* the last item.
+
         x = 3
 
         while True:
@@ -120,6 +123,9 @@ def question10():
     """
     What does this print?
 
+    Hint: The `end` value given in print() will appear after every printed item,
+    *including* the last item.
+
         x = [4, 12, 6]
 
         for value in x:
@@ -131,6 +137,9 @@ def question10():
 def question11():
     """
     What does this print?
+
+    Hint: The `end` value given in print() will appear after every printed item,
+    *including* the last item.
 
         x = {"a": 3, "b": 7, "c": 1}
 

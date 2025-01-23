@@ -15,9 +15,7 @@ def test_question0():
 
 
 def test_question1():
-    assert (
-        hash(question1())
-    ), "Incorrect"
+    assert hash(question1()), "Incorrect"
 
 
 def test_question2():
@@ -72,19 +70,19 @@ def test_question8():
 def test_question9():
     assert (
         hash(question9())
-        == "144b54829220f5bfdcd0c3bb52232f07d9508ede9a2c9a8c5d5ecc4663f0cace"
+        == "2e09349ac7451e35afa84a25af4338ff51b22f463b5a34971ab185a115a1829d"
     ), "Incorrect"
 
 
 def test_question10():
     assert (
         hash(question10())
-        == "03956b1d39c0125006d61b942aa098df16727254cacc4b3442cfd617850b5360"
+        == "84999342816fd4c22f342aa74920fdd09701131ad460a1cbd814e750bd3a27ac"
     ), "Incorrect"
 
 
 def test_question11():
     assert (
         hash(question11())
-        == "2fee710254ce53aa6a67822b1e46f5df3aaa298a92d8fca68c88e62f057f9515"
+        == "17f300d9e91ab869469c7c9986232f0edecab04eef10b083fecf0cf5cbaa299a"
     ), "Incorrect"
