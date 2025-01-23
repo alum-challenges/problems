@@ -2,14 +2,14 @@ def question0():
     """
     What is the keyword used for a single conditional branch in Python?
     """
-    return ""
+    return "TODO"
 
 
 def question1():
     """
     What is the keyword used to add more conditional paths to a branch?
     """
-    return ""
+    return "TODO"
 
 
 def question2():
@@ -17,7 +17,7 @@ def question2():
     What is the keyword used to add a branch that runs if no other conditions
     are met?
     """
-    return ""
+    return "TODO"
 
 
 def question3():
@@ -30,7 +30,7 @@ def question3():
     D. a == b
     E. a => b
     """
-    return "Z"
+    return "TODO"
 
 
 def question4():
@@ -43,7 +43,7 @@ def question4():
     D. a !== b
     E. a is not b
     """
-    return "Z"
+    return "TODO"
 
 
 def question5():
@@ -54,7 +54,7 @@ def question5():
 
         x = "" or 0 or False or "Hello"
     """
-    return None
+    return TODO
 
 
 def question6():
@@ -63,14 +63,14 @@ def question6():
 
         x = True and False or "Hello" and "World"
     """
-    return None
+    return TODO
 
 
 def question7():
     """
     What is the keyword used to start a pattern matching block?
     """
-    return ""
+    return "TODO"
 
 
 def question8():
@@ -78,7 +78,7 @@ def question8():
     What is the keyword used to define a specific pattern inside of a pattern
     matching block?
     """
-    return ""
+    return "TODO"
 
 
 def question9():
@@ -101,7 +101,7 @@ def question9():
 
         print("O", end="")
     """
-    return ""
+    return "TODO"
 
 
 def question10():
@@ -121,4 +121,4 @@ def question10():
                 print("No match :(")
 
     """
-    return ""
+    return "TODO"

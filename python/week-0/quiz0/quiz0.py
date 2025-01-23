@@ -2,7 +2,7 @@ def question0():
     """
     What is the keyword that comes before a function name?
     """
-    return ""
+    return "TODO"
 
 
 def question1():
@@ -10,7 +10,7 @@ def question1():
     What is the keyword that halts a function's execution and puts a value in
     the function's place?
     """
-    return ""
+    return "TODO"
 
 
 def question2():
@@ -30,7 +30,7 @@ def question2():
     E. `"David"` and `"Malan"`
     F. `first`, `last`, `"David"` and `"Malan"`
     """
-    return "Z"
+    return "TODO"
 
 
 def question3():
@@ -50,7 +50,7 @@ def question3():
     E. `"David"` and `"Malan"`
     F. `first`, `last`, `"David"` and `"Malan"`
     """
-    return "Z"
+    return "TODO"
 
 
 def question4():
@@ -70,7 +70,7 @@ def question4():
     E. `"David"` and `"Malan"`
     F. `first`, `last`, `"David"` and `"Malan"`
     """
-    return "Z"
+    return "TODO"
 
 
 def question5():
@@ -84,7 +84,7 @@ def question5():
 
         func(x)
     """
-    return None
+    return TODO
 
 
 def question6():
@@ -106,7 +106,7 @@ def question6():
     C. a and c
     D. b anc c
     """
-    return "Z"
+    return "TODO"
 
 
 def question7():
@@ -142,8 +142,8 @@ def question7():
         literal unless escaped with a backslash.
     """
     return {
-        "method1": "text",
-        "method2": "text",
-        "method3": "text",
-        "method4": "text",
+        "TODO": "text",
+        "TODO2": "text",
+        "TODO3": "text",
+        "TODO4": "text",
     }

@@ -1,0 +1,10 @@
+submit50:
+  files: &submit50_files
+    - !exclude "*"
+    - !include "testing.py"
+    - !include "quiz2.py"
+    - !require quiz2.py
+  style: false
+
+check50:
+  files: *submit50_files
