@@ -1,3 +1,5 @@
+> [!WARN] Some shorts may include concepts not covered for that week. You can ignore the advanced code that made it in by accident and focus on the concept the video is about. Do not worry; the more advanced code you see will be covered later in the course.
+
 ```mermaid
 flowchart TD
     A1[<a href='https://cs50.harvard.edu/python/2022/weeks/0/'>Week 0</a>] --> A2[<a href='https://cs50.harvard.edu/python/2022/shorts/visual_studio_code_for_cs50/'>Visual Studio Code for CS50</a>]
@@ -6,7 +8,6 @@ flowchart TD
     A0 --> A8[<a href='https://cs50.harvard.edu/python/2022/shorts/string_methods/'>String Methods</a>]
     A3 --> A5[<a href='https://cs50.harvard.edu/python/2022/shorts/return_values/'>Return Values</a>]
     A5 --> A6[<a href='https://cs50.harvard.edu/python/2022/shorts/side_effects/'>Side Effects</a>]
-    A6 --> A7[<a href='https://cs50.harvard.edu/python/2022/shorts/recursion/'>Recursion</a>]
 ```
 
 ```mermaid
@@ -69,4 +70,9 @@ flowchart TD
     A1[<a href='https://cs50.harvard.edu/python/2022/weeks/8/'>Week 8</a>] --> A2[<a href='https://cs50.harvard.edu/python/2022/shorts/classes/'>Classes</a>]
     A2 --> A4[<a href='https://cs50.harvard.edu/python/2022/shorts/instance_variables/'>Instance Variables</a>] --> A5[<a href='https://cs50.harvard.edu/python/2022/shorts/instance_methods/'>Instance Methods</a>]
     A2 --> A3[<a href='https://cs50.harvard.edu/python/2022/shorts/class_methods_class_variables/'>Class Methods and Class Variables</a>]
+```
+
+```mermaid
+flowchart TD
+    A1[<a href='https://cs50.harvard.edu/python/2022/weeks/9/'>Week 9</a>] --> A2[<a href='https://cs50.harvard.edu/python/2022/shorts/recursion/'>Recursion</a>]
 ```
