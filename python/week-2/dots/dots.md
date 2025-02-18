@@ -12,20 +12,23 @@ topics: "[\"Functions\", \"Lists\", \"Dict\", \"Loops\"]"
 
 ## Understanding
 In a file called `dots.py`, implement a program that prompts the user for input, then decodes the input:
-the amout of dots before an alphanumeric charachter is its position in a string. The decoding algorighm should be coded inside the `decode` function. The function should except a string, then return the decoded version of it.
+the amount of dots before an alphanumeric character is its position in a string. The decoding algorithm should be coded inside the `decode` function. The function should accept a string, then return the decoded version of it.
 
 
 Note: the indexes are starting from 1! 
 
 The input of `...5.C..S....0` would result in the output of `CS50`
 
-`...5` means that the charachter `5` has the position number `3` in the string.
+`...5` means that the character `5` has the position number `3` in the string.
 
-`.C` means that the charachter `C` has the position number `1` in the string.
 
-`..S` means that the charachter `S` has the position number `2` in the string.
+`.C` means that the character `C` has the position number `1` in the string.
 
-`....0` means that the charachter `0` has the position number `4` in the string.
+
+`..S` means that the character `S` has the position number `2` in the string.
+
+
+`....0` means that the character `0` has the position number `4` in the string.
 
 You can assume that there will be no 0 indexes letters, no repeated indexes.
 
