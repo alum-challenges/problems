@@ -8,16 +8,17 @@ topics: "[\"Functions\", \"Lists\", \"Dict\", \"Loops\"]"
 
 # Dots
 ## Background
-...
+In the competitive world of data compression, a startup called Dot Decode Inc. believed they had a game-changing algorithm. Their method, developed by the eccentric Dr. Dot, used dots to indicate character positions within a string.  Each dot before a character represented its index.  For example, "...5.C..S....0" would decode to "CS50".  Dr. Dot has vanished, leaving behind only an encoded message.  The company's future depends on cracking his code. Can you write a program to decode these messages and help solve the mystery of Dr. Dot's disappearance?
 
 ## Understanding
-In a file called `dots.py`, implement a program that prompts the user for input, then decodes the input:
-the amount of dots before an alphanumeric character is its position in a string. The decoding algorithm should be coded inside the `decode` function. The function should accept a string, then return the decoded version of it.
+In a file called `dots.py`, implement a program that takes an encoded message, which consists of a sequence of patterns of n dots, and a character. The n represent the characters position in a string. 
+for example: 
+
+> [!NOTE]
+> The indexes are starting from 1! 
 
 
-Note: the indexes are starting from 1! 
-
-The input of `...5.C..S....0` would result in the output of `CS50`
+The input `...5.C..S....0`, has output `CS50`
 
 `...5` means that the character `5` has the position number `3` in the string.
 
@@ -31,6 +32,8 @@ The input of `...5.C..S....0` would result in the output of `CS50`
 `....0` means that the character `0` has the position number `4` in the string.
 
 You can assume that there will be no 0 indexes letters, no repeated indexes.
+
+The decoding algorithm should be coded inside the `decode` function. The function should accept a string, then return the decoded version of it.
 
 ## Before You Begin
 Execute cd by itself in your terminal window. You should find that your terminal window’s prompt resembles the below:
