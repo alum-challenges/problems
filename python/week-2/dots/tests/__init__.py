@@ -14,14 +14,14 @@ def test_decode_small():
         raise check50.Failure(f"Decode doesn't  successfully decodes a simple string.")
 
 @check50.check(exists)
-def test_decode_small():
+def test_decode_small_numbers():
     """decode successfully returns a simple decoded string with numbers."""
     exit = check50.run("pytest tests.py -k 'test_decode_numbers'").exit()
     if exit == 1:
         raise check50.Failure(f"Decode doesn't  successfully decodes a simple string with numbers.")
 
 @check50.check(exists)
-def test_decode_small():
+def test_decode_small_non_alphanumerical():
     """decode successfully returns a simple decoded string with non alphanumarical charachters."""
     exit = check50.run("pytest tests.py -k 'test_decode_non_alphanumeric'").exit()
     if exit == 1:
