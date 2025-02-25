@@ -4,6 +4,7 @@ import check50
 def exists():
     """dots.py exists"""
     check50.exists("dots.py")
+    check50.include("tests.py")
 
 @check50.check(exists)
 def test_decode_small():
