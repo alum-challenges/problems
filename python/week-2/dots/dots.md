@@ -11,7 +11,10 @@ topics: "[\"Functions\", \"Lists\", \"Dict\", \"Loops\"]"
 In the competitive world of data compression, a startup called Dot Decode Inc. believed they had a game-changing algorithm. Their method, developed by the eccentric Dr. Dot, used dots to indicate character positions within a string.  Each dot before a character represented its index.  For example, "...5.C..S....0" would decode to "CS50".  Dr. Dot has vanished, leaving behind only an encoded message.  The company's future depends on cracking his code. Can you write a program to decode these messages and help solve the mystery of Dr. Dot's disappearance?
 
 ## Understanding
-In a file called `dots.py`, implement a program that takes an encoded message, which consists of a sequence of patterns of n dots, and a character. The n represent the characters position in a string. 
+[![asciicast demo](demo.gif)](https://asciinema.org/a/a7DuFslJcSHEqSQ4v4nPNy27F)
+
+
+In a file called `dots.py`, implement a program that takes a jumbled, encoded message consisting of letters and periods and prints the decoded message, where the position of each letter in the decoded message is equal to the number of periods before it in the encoded message
 for example: 
 
 > [!NOTE]
