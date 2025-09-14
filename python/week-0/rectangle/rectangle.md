@@ -62,7 +62,7 @@ a rectangle. Then you will calculate the perimeter, and return the number.
 </details>
 
 # How to Test
-* Run your program with `python rectangle.py`. Type `5` and press Enter. At the next prompt, type `3` and press Enter. Your program should output `14`.
+* Run your program with `python rectangle.py`. Type `5` and press Enter. At the next prompt, type `3` and press Enter. Your program should output `16`.
 
 * Run your program with `python rectangle.py`. Type `10` and press Enter. At the next prompt, type `5` and press Enter. Your program should output `30`.
 
