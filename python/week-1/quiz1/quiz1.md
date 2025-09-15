@@ -65,7 +65,7 @@ If you run into an error saying your file cannot be opened, retrace your steps t
 * **<span style="color: firebrick;">Red</span>** frowns will indicate your program output something unexpected.
 * **<span style="color: orange;">Orange</span>** neutral faces mean you must fix the failed check before those checks can run.
 
-Visit the URL that `check50` outputs to see the input `check50` handed to your program, what output it expected, and what output your program actually gave.
+Quizzes will not tell you what answer is expected, only which questions you failed.
 
 ## How to Submit
 > *Coming soon*
