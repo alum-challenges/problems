@@ -26,7 +26,7 @@ def question3():
 
     A. a ~ b
     B. a = b
-    C. a is b
+    C. a != b
     D. a == b
     E. a => b
     """
@@ -41,7 +41,7 @@ def question4():
     B. a != b
     C. a ~= b
     D. a !== b
-    E. a is not b
+    E. a not == b
     """
     return "TODO"
 
